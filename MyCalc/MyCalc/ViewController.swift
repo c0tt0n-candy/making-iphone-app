@@ -49,4 +49,8 @@ class ViewController: UIViewController {
     @IBAction func tapClearButton(_ sender: UIButton) {
         priceField.text = "0"
     }
+
+    @IBAction func restart(_ segue: UIStoryboardSegue) {
+        priceField.text = "0"
+    }
 }

@@ -141,6 +141,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-Lt-9WM">
                                         <rect key="frame" x="0.0" y="216" width="343" height="30"/>
                                         <state key="normal" title="割引%を入力する"/>
+                                        <connections>
+                                            <segue destination="ryu-oR-qXr" kind="presentation" id="NEC-A6-BO0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -295,6 +298,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfo-JQ-xeT">
                                         <rect key="frame" x="0.0" y="216" width="343" height="30"/>
                                         <state key="normal" title="計算する"/>
+                                        <connections>
+                                            <segue destination="brl-Sl-qSx" kind="presentation" id="lgb-p8-0Hr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -349,6 +355,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0y-ln-HJP">
                                 <rect key="frame" x="16" y="128" width="343" height="30"/>
                                 <state key="normal" title="他の計算をする"/>
+                                <connections>
+                                    <segue destination="2De-55-kGh" kind="unwind" unwindAction="restart:" id="dNR-6y-OPK"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i7n-Bm-PDw">
                                 <rect key="frame" x="16" y="74" width="343" height="30"/>
@@ -375,6 +384,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBl-QU-7Al" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2De-55-kGh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1746" y="133"/>
         </scene>
