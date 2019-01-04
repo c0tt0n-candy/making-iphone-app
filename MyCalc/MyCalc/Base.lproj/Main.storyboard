@@ -332,5 +332,48 @@
             </objects>
             <point key="canvasLocation" x="993" y="133"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="he1-jH-Hc3">
+            <objects>
+                <viewController id="brl-Sl-qSx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OO9-zt-1n4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="計算結果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsM-X4-aYT">
+                                <rect key="frame" x="15" y="45" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0y-ln-HJP">
+                                <rect key="frame" x="16" y="128" width="343" height="30"/>
+                                <state key="normal" title="他の計算をする"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i7n-Bm-PDw">
+                                <rect key="frame" x="16" y="74" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JsM-X4-aYT" firstAttribute="top" secondItem="HpC-57-uNj" secondAttribute="top" constant="25" id="E7m-A1-xc2"/>
+                            <constraint firstItem="x0y-ln-HJP" firstAttribute="top" secondItem="i7n-Bm-PDw" secondAttribute="bottom" constant="24" id="SmA-He-xeX"/>
+                            <constraint firstItem="HpC-57-uNj" firstAttribute="trailing" secondItem="i7n-Bm-PDw" secondAttribute="trailing" constant="16" id="TL9-4w-ZdL"/>
+                            <constraint firstItem="x0y-ln-HJP" firstAttribute="leading" secondItem="HpC-57-uNj" secondAttribute="leading" constant="16" id="VyS-FG-VEZ"/>
+                            <constraint firstItem="i7n-Bm-PDw" firstAttribute="leading" secondItem="HpC-57-uNj" secondAttribute="leading" constant="16" id="bjj-XC-LSY"/>
+                            <constraint firstItem="JsM-X4-aYT" firstAttribute="leading" secondItem="HpC-57-uNj" secondAttribute="leading" constant="15" id="mdk-6i-2jv"/>
+                            <constraint firstItem="i7n-Bm-PDw" firstAttribute="top" secondItem="JsM-X4-aYT" secondAttribute="bottom" constant="8" id="qys-9J-2V6"/>
+                            <constraint firstItem="HpC-57-uNj" firstAttribute="trailing" secondItem="x0y-ln-HJP" secondAttribute="trailing" constant="16" id="r4t-vI-vEa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HpC-57-uNj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBl-QU-7Al" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="133"/>
+        </scene>
     </scenes>
 </document>
