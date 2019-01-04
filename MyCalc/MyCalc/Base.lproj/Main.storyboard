@@ -332,10 +332,10 @@
             </objects>
             <point key="canvasLocation" x="993" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="he1-jH-Hc3">
             <objects>
-                <viewController id="brl-Sl-qSx" sceneMemberID="viewController">
+                <viewController id="brl-Sl-qSx" customClass="ResultViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OO9-zt-1n4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -370,6 +370,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HpC-57-uNj"/>
                     </view>
+                    <connections>
+                        <outlet property="resultField" destination="i7n-Bm-PDw" id="nAc-PX-s8l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBl-QU-7Al" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
