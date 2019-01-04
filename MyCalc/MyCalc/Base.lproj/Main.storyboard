@@ -167,11 +167,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--Percent View Controller-->
         <scene sceneID="e5s-KW-0Vt">
             <objects>
-                <viewController id="ryu-oR-qXr" sceneMemberID="viewController">
+                <viewController id="ryu-oR-qXr" customClass="PercentViewController" customModule="MyCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qbi-9t-M5k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,14 +198,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtR-gu-Xg6">
                                                 <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="dT2-4V-uBL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pR6-gD-vgg">
                                                 <rect key="frame" x="117" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="NuQ-eP-9hn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kU-87-OA9">
                                                 <rect key="frame" x="234" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="Efy-kg-zzF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -214,14 +224,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ww5-HG-HZa">
                                                 <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="3mk-6Y-V9X"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9e-qk-EmY">
                                                 <rect key="frame" x="117" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="3Dt-b8-jiC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GB-oI-eM9">
                                                 <rect key="frame" x="234" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="HMu-MG-lQm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -231,14 +250,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGD-Ni-9mh">
                                                 <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="VkI-0B-w4Q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0I-R3-HjY">
                                                 <rect key="frame" x="117" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="DVH-je-4nx"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOV-zY-aZq">
                                                 <rect key="frame" x="234" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="g0e-Jo-2Fk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -248,6 +276,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoE-3d-aY1">
                                                 <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="tapNumberButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="SlM-ET-Tmg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9U-py-C7A">
                                                 <rect key="frame" x="117" y="0.0" width="109" height="30"/>
@@ -255,6 +286,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trv-66-gzR">
                                                 <rect key="frame" x="234" y="0.0" width="109" height="30"/>
                                                 <state key="normal" title="C"/>
+                                                <connections>
+                                                    <action selector="tapClearButton:" destination="ryu-oR-qXr" eventType="touchUpInside" id="ysC-FJ-UAq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -290,6 +324,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zqY-1s-ptW"/>
                     </view>
+                    <connections>
+                        <outlet property="percentField" destination="2rx-0q-f8S" id="Tpn-d3-veB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFk-sQ-3JQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
