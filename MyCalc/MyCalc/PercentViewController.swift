@@ -19,6 +19,17 @@ class PercentViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? ResultViewController {
+            if let percentString = percentField.text {
+                if let percentInt = Int(percentString) {
+                    viewController.price = price
+                    viewController.percent = percentInt
+                }
+            }
+        }
+    }
+
     @IBAction func tapNumberButton(_ sender: UIButton) {
         var percent: Int
         

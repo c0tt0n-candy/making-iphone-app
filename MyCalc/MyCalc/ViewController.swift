@@ -17,6 +17,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? PercentViewController {
+            if let priceString = priceField.text {
+                if let priceInt = Int(priceString) {
+                    viewController.price = priceInt
+                }
+            }
+        }
+    }
+
     @IBAction func tapNumberButton(_ sender: UIButton) {
         var price: Int
         
